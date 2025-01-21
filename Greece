@@ -1,0 +1,18 @@
+protected override void OnPaint(PaintEventArgs e)
+{
+    Graphics g = e.Graphics;
+    Pen p = new Pen(Color.Black);
+    Brush b = new SolidBrush(Color.Blue);
+
+    g.FillRectangle(b, 230, 230, 30, 30);
+    g.FillRectangle(b, 275, 230, 30, 30);
+    g.FillRectangle(b, 275, 275, 30, 30);
+    g.FillRectangle(b, 230, 275, 30, 30);
+
+    g.FillRectangle(b, 305, 230, 110, 15);
+    g.FillRectangle(b, 305, 260, 110, 15);
+    g.FillRectangle(b, 305, 290, 110, 15);
+
+    g.FillRectangle(b, 230, 320, 185, 15);
+    g.FillRectangle(b, 230, 350, 185, 15);
+}
