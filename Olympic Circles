@@ -1,0 +1,16 @@
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            Graphics g = e.Graphics;
+            g.Clear(Color.White);
+            Pen p1 = new Pen(Color.Blue, 8);
+            Pen p2 = new Pen(Color.Black, 8);
+            Pen p3 = new Pen(Color.Red, 8);
+            Pen p4 = new Pen(Color.Orange, 8);
+            Pen p5 = new Pen(Color.Green, 8);
+
+            g.DrawEllipse(p1, 100, 100, 100, 100);
+            g.DrawEllipse(p2, 215, 100, 100, 100);
+            g.DrawEllipse(p3, 330, 100, 100, 100);
+            g.DrawEllipse(p4, 160, 155, 100, 100);
+            g.DrawEllipse(p5, 275, 155, 100, 100);
+        }
