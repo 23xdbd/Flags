@@ -1,0 +1,15 @@
+ protected override void OnPaint(PaintEventArgs e)
+ {
+     Graphics g = e.Graphics;
+     g.Clear(Color.GreenYellow);
+     Pen p1 = new Pen(Color.White);
+     Brush b1 = new SolidBrush(Color.White);
+     Pen p2 = new Pen(Color.Red);
+     Brush b2 = new SolidBrush(Color.Red);
+
+     g.DrawRectangle(p1, 200, 200, 400, 200);
+     g.FillRectangle(b1, 200, 200, 400, 200);
+     g.DrawEllipse(p2, 325, 225, 150, 150);
+     g.FillEllipse(b2, 325, 225, 150, 150);
+
+ }
